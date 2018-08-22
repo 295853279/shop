@@ -1,9 +1,9 @@
 <template>
     <header class="header">
-          <slot name="left"></slot>
+        <slot name="left"></slot>
         <span class="header_title">
-            <span class="header_title_text ellipsis">{{title}}</span>
-          </span>
+      <span class="header_title_text ellipsis">{{title}}</span>
+    </span>
         <slot name="right"></slot>
     </header>
 </template>
@@ -11,13 +11,13 @@
 <script>
 
     export default {
-        props:{
-            title:String
-        }
+        props: {
+            title: String
+        },
     }
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus">
     .header
         background-color #02a774
         position fixed
